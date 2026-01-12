@@ -42,6 +42,12 @@ interface FilterSelectProps {
 	onChange: (value: string) => void;
 }
 
+interface PaginationProps {
+	currentPage: number;
+	totalPages: number;
+	onPageChange: (page: number) => void;
+}
+
 export type {
 	TicketStatus,
 	TicketPriority,
@@ -50,4 +56,5 @@ export type {
 	TicketFormProps,
 	StatsCardProps,
 	FilterSelectProps,
+	PaginationProps,
 };
