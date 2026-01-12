@@ -30,3 +30,10 @@ export interface RangeSliderProps {
 export interface BenefitsDisplayProps {
 	benefits: string[];
 }
+
+export interface AdditionalCoverageProps {
+	name: string;
+	price: number;
+	checked: boolean;
+	onChange: (checked: boolean) => void;
+}
