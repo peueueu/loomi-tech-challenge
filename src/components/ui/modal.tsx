@@ -22,15 +22,12 @@ export function Modal({
 
 	return (
 		<div className='fixed inset-0 z-50 flex items-center justify-center'>
-			{/* Overlay */}
 			<div
 				className='absolute inset-0 bg-black/60 backdrop-blur-sm'
 				onClick={onClose}
 			/>
 
-			{/* Modal Content */}
 			<div className='relative bg-slate-800 border border-slate-700 rounded-lg shadow-xl max-w-2xl w-full mx-4'>
-				{/* Header */}
 				<div className='flex items-center justify-between p-6 border-b border-slate-700'>
 					<div className='flex-1'>
 						<h2 className='text-xl font-semibold text-slate-100'>{title}</h2>
@@ -46,7 +43,6 @@ export function Modal({
 					</button>
 				</div>
 
-				{/* Body */}
 				<div className='p-6'>{children}</div>
 			</div>
 		</div>
