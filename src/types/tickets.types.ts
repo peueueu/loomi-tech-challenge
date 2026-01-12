@@ -1,29 +1,18 @@
+import { Ticket } from "@/schemas/ticket.schema";
 import { LucideIcon } from "lucide-react";
 
-type TicketStatus = "Aberto" | "Em andamento" | "Resolvido";
+type TicketStatus = "Aberto" | "Em andamento" | "Fechado";
 type TicketPriority = "Urgente" | "Média" | "Baixa";
-
-interface Ticket {
-	id: string;
-	priority: TicketPriority;
-	client: {
-		name: string;
-		email: string;
-	};
-	subject: string;
-	status: TicketStatus;
-	createdAt: string;
-	responsible: string;
-}
-
 interface TicketTableProps {
 	tickets: Ticket[];
+	loading?: boolean;
 	onEdit?: (ticket: Ticket) => void;
 	onView?: (ticket: Ticket) => void;
 }
 
 interface TicketFormProps {
 	ticket?: Ticket;
+	isEditing?: boolean;
 	onSubmit: (data: Partial<Ticket>) => void;
 	onCancel: () => void;
 }
