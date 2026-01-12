@@ -26,3 +26,7 @@ export interface RangeSliderProps {
 	unit?: string;
 	formatLabel?: (value: number) => string;
 }
+
+export interface BenefitsDisplayProps {
+	benefits: string[];
+}
