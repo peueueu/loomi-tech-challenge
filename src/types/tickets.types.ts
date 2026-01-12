@@ -1,3 +1,5 @@
+import { LucideIcon } from "lucide-react";
+
 type TicketStatus = "Aberto" | "Em andamento" | "Resolvido";
 type TicketPriority = "Urgente" | "Média" | "Baixa";
 
@@ -26,10 +28,18 @@ interface TicketFormProps {
 	onCancel: () => void;
 }
 
+interface StatsCardProps {
+	label: string;
+	value: string | number;
+	icon: LucideIcon;
+	color?: "blue" | "orange" | "green" | "cyan";
+}
+
 export type {
 	TicketStatus,
 	TicketPriority,
 	Ticket,
 	TicketTableProps,
 	TicketFormProps,
+	StatsCardProps,
 };
