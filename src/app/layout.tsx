@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
+import Head from "next/head";
 
 const InterFont = Inter({
 	variable: "--font-inter",
@@ -21,9 +22,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='pt-BR'>
-			<head>
+			<Head>
 				<title>Nortus Dashboard</title>
-			</head>
+			</Head>
 			<body className={`${InterFont.variable} antialiased overflow-y-hidden`}>
 				<Toaster position='top-right' />
 				{children}
