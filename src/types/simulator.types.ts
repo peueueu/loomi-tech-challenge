@@ -16,3 +16,13 @@ export interface PlanCardProps {
 	isActive?: boolean;
 	onClick?: () => void;
 }
+
+export interface RangeSliderProps {
+	label: string;
+	min: number;
+	max: number;
+	value: number;
+	onChange: (value: number) => void;
+	unit?: string;
+	formatLabel?: (value: number) => string;
+}
