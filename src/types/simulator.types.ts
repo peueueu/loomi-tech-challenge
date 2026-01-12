@@ -8,3 +8,11 @@ export interface IndicatorMetrics {
 export interface IndicatorsProps {
 	plans: IndicatorMetrics[];
 }
+
+export interface PlanCardProps {
+	name: string;
+	price: number;
+	isRecommended?: boolean;
+	isActive?: boolean;
+	onClick?: () => void;
+}
