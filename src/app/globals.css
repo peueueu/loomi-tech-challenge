@@ -159,3 +159,7 @@
   );
   animation: shimmer 1.5s infinite;
 }
+
+.table-skeleton .skeleton-shimmer::after {
+  animation-duration: 2s;
+}
