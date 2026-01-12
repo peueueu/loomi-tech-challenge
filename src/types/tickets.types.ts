@@ -35,6 +35,13 @@ interface StatsCardProps {
 	color?: "blue" | "orange" | "green" | "cyan";
 }
 
+interface FilterSelectProps {
+	label: string;
+	options: string[];
+	value: string;
+	onChange: (value: string) => void;
+}
+
 export type {
 	TicketStatus,
 	TicketPriority,
@@ -42,4 +49,5 @@ export type {
 	TicketTableProps,
 	TicketFormProps,
 	StatsCardProps,
+	FilterSelectProps,
 };
