@@ -2,6 +2,7 @@
 
 import { KPIEvolutionChart } from "@/components/dashboard/charts/kpi-evolution-chart";
 import { ConversionRateChart } from "@/components/dashboard/charts/conversion-rate-chart";
+import { DashboardMap } from "@/components/dashboard/map";
 
 export default function Dashboard() {
 	return (
@@ -22,6 +23,7 @@ export default function Dashboard() {
 					<ConversionRateChart />
 				</div>
 			</div>
+			<DashboardMap />
 		</div>
 	);
 }
