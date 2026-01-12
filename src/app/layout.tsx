@@ -21,6 +21,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='pt-BR'>
+			<head>
+				<title>Nortus Dashboard</title>
+			</head>
 			<body className={`${InterFont.variable} antialiased overflow-y-hidden`}>
 				<Toaster position='top-right' />
 				{children}
