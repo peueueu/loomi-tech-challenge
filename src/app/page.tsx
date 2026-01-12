@@ -17,9 +17,7 @@ export default function Auth() {
 					/>
 				</div>
 
-				{/* Main Content */}
 				<div className='flex flex-1'>
-					{/* Left Section - Form */}
 					<div className='flex flex-1 items-center justify-center px-6 xl:justify-start lg:px-12 xl:px-20'>
 						<div className='w-full max-w-3xl'>
 							<div className='mb-8 sm:mb-10'>
@@ -34,7 +32,6 @@ export default function Auth() {
 						</div>
 					</div>
 
-					{/* Right Section - Banner Image */}
 					<div className='hidden xl:flex flex-1 items-center justify-center xl:mr-12 2xl:mr-20'>
 						<div className='relative aspect-934/952 w-175'>
 							<div className='absolute top-0 right-[18%] translate-x-1/2 z-10 flex gap-4'>
