@@ -9,24 +9,24 @@ import { ChatMessage } from "@/types/chat.types";
 const INITIAL_MESSAGES: ChatMessage[] = [
 	{
 		id: "1",
-		type: "assistant",
-		content: "Oi! Tudo certo? Gostaria de saber sobre o seguro automóvel",
-		timestamp: "12:23",
-	},
-	{
-		id: "2",
 		type: "user",
-		content:
-			"Oi, Ricardo! Tudo ótimo com você? Claro que sim, posso te ajudar com o que precisar. Vi aqui que você com a gente há 6 meses com o seguro de automóvel, e isso mesmo?",
+		content: "Oi! Tudo certo? Gostaria de saber sobre o seguro automóvel",
 		timestamp: "12:23",
 		userName: "Ricardo Leite - Seguro Automóvel",
 		showCheckmarks: true,
 	},
 	{
-		id: "3",
+		id: "2",
 		type: "assistant",
 		content:
-			"Isso! Mas agora fiquet pensando... tem alguma coisa além disso? Tipo, prós meus equipamentos",
+			"Oi, Ricardo! Tudo ótimo com você? Claro que sim, posso te ajudar com o que precisar. Vi aqui que você com a gente há 6 meses com o seguro de automóvel, e isso mesmo?",
+		timestamp: "12:23",
+	},
+	{
+		id: "3",
+		type: "user",
+		content:
+			"Isso! Mas agora fiquei pensando... tem alguma coisa além disso? Tipo, prós meus equipamentos",
 		timestamp: "12:23",
 	},
 	{

@@ -23,6 +23,7 @@ export function Message({
 		return (
 			<div className='flex justify-start mb-4'>
 				<div className='bg-blue-500 text-white rounded-3xl rounded-bl-none px-4 py-3 max-w-xs'>
+					<h3 className='mb-3 text-xs opacity-80'>{userName}</h3>
 					<p className='text-sm'>{content}</p>
 					<div className='flex items-center justify-end gap-1 mt-2'>
 						<span className='text-xs opacity-80'>{timestamp}</span>
