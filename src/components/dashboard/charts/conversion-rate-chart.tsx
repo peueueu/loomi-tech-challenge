@@ -11,9 +11,9 @@ import {
 export function ConversionRateChart() {
 	const [loading, setLoading] = React.useState(true);
 
-	const chartOptions = useMemo(() => ({ conversionRateChartOptions }), []);
+	const chartOptions = useMemo(() => ({ ...conversionRateChartOptions }), []);
 
-	const series = useMemo(() => [{ conversionRateChartSeries }], []);
+	const series = useMemo(() => [{ ...conversionRateChartSeries }], []);
 
 	const chartRef = useRef<HTMLDivElement>(null);
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
