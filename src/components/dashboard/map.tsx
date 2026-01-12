@@ -78,8 +78,6 @@ export function DashboardMap() {
 			return locationMatch && typeMatch;
 		});
 
-		console.log("Filtered clients:", filteredClients);
-
 		filteredClients.forEach((client) => {
 			const feature = new Feature({
 				geometry: new Point(fromLonLat([client.lon, client.lat])),
